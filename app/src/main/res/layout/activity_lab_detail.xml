@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aks.MyLabs.LabDetail">
+
+    <TextView
+        android:id="@+id/tvlabname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#333"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bconfirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="CONFIRM"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bconfirm"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="21dp"
+        android:text="Total"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/total"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/total"
+            android:layout_below="@+id/tvlabname">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/metname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvlabname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_weight="7.5"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:text="adsdgf"
+                android:textColor="#666" />
+
+                <EditText
+                    android:id="@+id/metrate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvlabname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2.5"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textMultiLine"
+                    android:padding="20dp"
+                    android:text="adsdg"
+                    android:textColor="#666" />
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+</RelativeLayout>
